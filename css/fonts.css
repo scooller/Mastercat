@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Vag";
+  src: url("../fonts/vagblackregular-webfont.woff2") format("woff2"), url("../fonts/vagblackregular-webfont.woff") format("woff");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vag";
+  src: url("../fonts/vagbold-webfont.woff2") format("woff2"), url("../fonts/vagbold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vag";
+  src: url("../fonts/vaglightregular-webfont.woff2") format("woff2"), url("../fonts/vaglightregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vag Rounded";
+  src: url("../fonts/T Regular.eot");
+  src: url("../fonts/T Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/T Regular.woff2") format("woff2"), url("../fonts/T Regular.woff") format("woff"), url("../fonts/T Regular.svg#T Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+/*
+@font-face {
+    font-family: 'Vag Rounded';
+    src: url('https://websitemcatn.azurewebsites.net/wp-content/themes/mastercat/fonts/vagblackregular-webfont.woff2') format('woff2'),
+         url('https://websitemcatn.azurewebsites.net/wp-content/themes/mastercat/fonts/vagblackregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
