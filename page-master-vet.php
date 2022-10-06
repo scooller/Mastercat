@@ -5,6 +5,7 @@
 <section class="container-fluid page-cont" id="master-vet">
 </section>
 <?php get_template_part( 'part', 'vetroute' ); ?>
+<?php if(get_field('mostrar_mv')): ?>
 <section class="container-fluid page-cont" id="master-vet-online">
 	<div class="container">
 		<div class="row">
@@ -29,6 +30,7 @@
 <div class="d-none">
 	<div id="popup-content"><?php echo get_field('mastervet_online_group')['contenido_popup'];?></div>
 </div>
+<?php endif; ?>
 <section class="container-fluid page-cont" id="master-vet-contacto">
 	<div class="container text-center">
 		<div class="row">
