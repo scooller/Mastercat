@@ -7,7 +7,7 @@
 		<div class="row g-0">
 	        <div class="col-12 col-lg-7 d-flex align-items-center py-3">
 	            <div class="vet-online__left px-3">
-	                <img class="vet-online_left-img py-3 pt-lg-0 pb-lg-3" src="<?php echo get_field('master_match_superior_group')['imagen_principal']['url'];?>">
+	                <img class="vet-online_left-img py-3 pt-lg-0 pb-lg-3 img-fluid" src="<?php echo get_field('master_match_superior_group')['imagen_principal']['url'];?>">
 	                <h4 class="title"><?php echo get_field('master_match_superior_group')['titulo'];?></h4>
 					<p class="pb-2"><?php echo get_field('master_match_superior_group')['contenido'];?></p>
 	                <a href="<?php echo get_field('master_match_superior_group')['boton']['url'];?>" class="btn btn-primary" title="<?php echo get_field('master_match_superior_group')['boton']['title'];?>"><?php echo get_field('master_match_superior_group')['boton']['title'];?></a>
@@ -25,7 +25,7 @@
 	<?php if(get_field('primeros_pasos_group')['tips']): ?>
 		<div class="row">
 			<?php foreach(get_field('primeros_pasos_group')['tips'] as $tips): ?>
-			<div class="col-6 col-md text-center">
+			<div class="col-12 mb-3 col-md text-center">
 				<img src="<?php echo $tips['icono']; ?>" class="img-fluid img mx-auto">
 				<h4 class="title"><?php echo $tips['titulo']; ?></h4>
 				<div class="txt"><?php echo $tips['contenido']; ?></div>

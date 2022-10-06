@@ -359,23 +359,20 @@ header.menu-header{
 		    margin-top: 0.5rem;
 		    font-family: $secondary-font;
     		color: $azul3;
+			line-height: 1;
     		font-weight: 700;
 	    }
 	    h1{
 		    font-size: 3.5rem;
-		    line-height: 3.5rem;
 	    }
 	    h2{
 		    font-size: 3rem;
-		    line-height: 3rem;
 	    }
 	    h3{
-		    font-size: 2.5rem;
-		    line-height: 2.5rem;		   
+		    font-size: 2.5rem;		   
 	    }
 	    h4{
-    		font-size: 2rem;
-    		line-height: 2rem;    		
+    		font-size: 2rem;    		
 	    }
 	    a.btn-link{
 	    	color: $azul3;
@@ -669,6 +666,11 @@ header.menu-header{
 			font-family: $secondary-font;
 			span{
 				color: $amarillo3;
+				@include media-breakpoint-between(xs,sm) {
+					font-size: 1rem;
+					min-height: 69px;
+    				display: block;
+				}
 			}
 		}
 		.btn-secondary {
@@ -1066,6 +1068,11 @@ body{
 		#master-match{
 			padding-top: 3rem;
 			padding-bottom: 0rem;
+			#quest{
+				@include media-breakpoint-between(xs,sm) {
+					margin-top: 3rem;
+				}
+			}
 			.item-quest {
 			    max-width: 1040px;
 			    margin: 0 auto 80px;
@@ -1112,6 +1119,9 @@ body{
 			    			font-size: 1.3rem;
 			    			line-height: 1.3rem;
 			    			margin-bottom: .5rem;
+							@include media-breakpoint-between(xs,sm) {
+								width: 100%;
+							}
 			    		}
 			    		&:checked{
 				    		& ~ .checkmark{

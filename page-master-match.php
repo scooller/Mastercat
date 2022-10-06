@@ -37,7 +37,7 @@
                         $subtax = get_term_by('id', $taxchil, 'categoria_gato');
                         //var_dump($subtax);
                     ?>
-                    <div class="col-6 col-md">
+                    <div class="col-12 col-md">
                         <label>
                             <input class="check-input" type="radio" name="<?php echo $tax->slug; ?>" value="<?php echo $subtax->term_id; ?>" required>
                             <span class="checkmark"><?php echo $subtax->name; ?></span>
