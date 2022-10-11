@@ -359,20 +359,23 @@ header.menu-header{
 		    margin-top: 0.5rem;
 		    font-family: $secondary-font;
     		color: $azul3;
-			line-height: 1;
     		font-weight: 700;
 	    }
 	    h1{
 		    font-size: 3.5rem;
+		    line-height: 3.5rem;
 	    }
 	    h2{
 		    font-size: 3rem;
+		    line-height: 3rem;
 	    }
 	    h3{
-		    font-size: 2.5rem;		   
+		    font-size: 2.5rem;
+		    line-height: 2.5rem;		   
 	    }
 	    h4{
-    		font-size: 2rem;    		
+    		font-size: 2rem;
+    		line-height: 2rem;    		
 	    }
 	    a.btn-link{
 	    	color: $azul3;
@@ -407,6 +410,7 @@ header.menu-header{
     		@include media-breakpoint-between(xs,sm) {
     			margin-left: auto;
     			margin-right: auto;
+    			width: 100%;
     		}
     	}
     }
@@ -666,11 +670,6 @@ header.menu-header{
 			font-family: $secondary-font;
 			span{
 				color: $amarillo3;
-				@include media-breakpoint-between(xs,sm) {
-					font-size: 1rem;
-					min-height: 69px;
-    				display: block;
-				}
 			}
 		}
 		.btn-secondary {
@@ -1016,6 +1015,11 @@ header.secondary-nav{
 			    overflow: hidden;
 			    background-position: center;
 		    }
+		    @include media-breakpoint-between(xs,sm) {
+		    	.img{
+				    height: 50vw;
+		    	}
+		    }
 		    .inter{
 		    	padding: 20px;
 		    	small {
@@ -1033,6 +1037,14 @@ header.secondary-nav{
 	}
 }
 body{
+	&.page-id-6{//Home
+		@include media-breakpoint-between(xs,sm) {
+			.owl-carousel .owl-item .img-fluid {	
+				padding-top: 15rem;
+			}
+		}
+
+	}
 	&.page-id-113{//Master vet
 		#blog .row{
 			a small {
@@ -1045,6 +1057,49 @@ body{
 	}
 	&.error404{
 		padding-top: 8rem;
+	}
+	&.page-id-319{//Productos
+		@include media-breakpoint-between(xs,sm) {
+			.owl-carousel .owl-item .img-fluid {	
+				padding-top: 5rem;
+			}
+		}
+
+	}
+	&.page-id-282{//Adopcion
+		@include media-breakpoint-between(xs,sm) {
+			.owl-carousel .owl-item .img-fluid {	
+				padding-top: 8rem;
+			}	
+		}
+	}
+	&.page-id-285{//Calidad
+		@include media-breakpoint-between(xs,sm) {
+			.owl-carousel .owl-item .img-fluid {	
+				padding-top: 5rem;
+			}
+			.sliders .content{
+				h2 {
+	    			font-size: 2rem;
+	    		}
+			}
+			#calidad .container{
+				width: 90%;
+	    		padding-right: 0
+			}
+		}	
+	}
+	&.page-id-606{//Calidad
+		@include media-breakpoint-between(xs,sm) {
+			.owl-carousel .owl-item .img-fluid {	
+				padding-top: 15rem;
+			}
+			.sliders .content{
+				h2 {
+	    			font-size: 2.5rem;
+	    		}
+			}
+		}	
 	}
 	&.page-id-426{//Master match		
 		.big-title{
@@ -1068,11 +1123,6 @@ body{
 		#master-match{
 			padding-top: 3rem;
 			padding-bottom: 0rem;
-			#quest{
-				@include media-breakpoint-between(xs,sm) {
-					margin-top: 3rem;
-				}
-			}
 			.item-quest {
 			    max-width: 1040px;
 			    margin: 0 auto 80px;
@@ -1119,9 +1169,6 @@ body{
 			    			font-size: 1.3rem;
 			    			line-height: 1.3rem;
 			    			margin-bottom: .5rem;
-							@include media-breakpoint-between(xs,sm) {
-								width: 100%;
-							}
 			    		}
 			    		&:checked{
 				    		& ~ .checkmark{
@@ -1207,6 +1254,13 @@ body{
 			    }
 			}
 		}
+		@include media-breakpoint-between(xs,sm) {
+			.sliders .content{
+				h3 {
+	    			line-height: 5.5rem;
+	    		}
+			}
+		}
 	}
 }
 .vet-route{
@@ -1226,6 +1280,14 @@ body{
 	}
 	.owl-nav button.owl-next.owl-prev, .owl-nav button.owl-prev.owl-prev {
 		left: -55px;
+	}
+	@include media-breakpoint-between(xs,sm) {
+		.owl-nav button.owl-next.owl-next, .owl-nav button.owl-prev.owl-next{
+			right: 1px;
+		}
+		.owl-nav button.owl-next.owl-prev, .owl-nav button.owl-prev.owl-prev {
+			left: 1px;
+		}
 	}
 }
 .owl-vet .owl-stage-outer{
@@ -1304,6 +1366,11 @@ body{
 	background-color: $gris;
 	color: $azul3;
 	text-align: center;
+	@include media-breakpoint-between(xs,sm) {
+		.vet-online_left-img{
+			width: 100%;
+		}
+	}
 }
 #contactanos{
 	background: #0643B2 url(../img/bg-grid-contact-pattern.svg) repeat left top;
@@ -1388,6 +1455,17 @@ body{
 			}
 
 		}
+		@include media-breakpoint-between(xs,sm) {
+			.owl-carousel .owl-item{
+				.content{
+					top: 2%;
+				}
+				.img-fluid{
+					padding-top: 15rem;
+				}
+			}
+		}
+
 	}	
 }
 .fancybox-content{
