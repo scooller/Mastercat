@@ -28,6 +28,9 @@ owl.owlCarousel({
 }).on('changed.owl.carousel', function(event) {
 	currItem=event.property.value;
 	console.log("paso:"+currItem);
+	
+	$(window).scrollTop($('#master-club .owl-item .paso-'+(currItem+1) ).offset().top-($('#master-club .owl-item .paso-'+(currItem+1)).height()/3));
+	
 	if(currItem == 2){
 		$('.paso-3 ul.peludos').empty();
 		console.log()
@@ -37,7 +40,7 @@ owl.owlCarousel({
 		});		
 	}
 });
-	
+$(window).scrollTop($('#master-club .owl-item .paso-1').offset().top-($('#master-club .owl-item .paso-1').height()/3));
 $('.next-step').click(function(){
 	if( $('input[name="anhos"]').val() !== "" ){
 		if( typeof $('input[name="anhos_arry['+nGatos+']"]').val() === "undefined" ){

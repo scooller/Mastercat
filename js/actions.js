@@ -22,7 +22,7 @@ $(function() {
       }
   });
   $( window ).scroll(function() {
-    console.log('scroll');
+    //console.log('scroll');
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
     if(docViewTop){

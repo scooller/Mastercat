@@ -196,7 +196,7 @@ header.menu-header{
 		    height: 4px;
 		    margin-bottom: 5px;
 		    position: relative;
-		    background: #0643B2;
+		    background: $azul-oscuro;
 		    border-radius: 3px;
 		    pointer-events: none;
 		    z-index: 15;
@@ -212,7 +212,7 @@ header.menu-header{
 	    input:checked ~ span {
 		    opacity: 1;
 		    transform: rotate(45deg) translate(-2px, -1px);
-		    background: #0643B2;
+		    background: $azul-oscuro;
 		    &:nth-last-child(3) {
 			    opacity: 0;
 			    transform: rotate(0deg) scale(0.2, 0.2);
@@ -1040,7 +1040,7 @@ body{
 	&.page-id-6{//Home
 		@include media-breakpoint-between(xs,sm) {
 			.owl-carousel .owl-item .img-fluid {	
-				padding-top: 15rem;
+				padding-top: 6.5rem;
 			}
 		}
 
@@ -1106,7 +1106,7 @@ body{
 			font-family: $secondary-font;
 	    	font-size: 5rem;
 	    	color: $amarillo;
-	    	text-shadow: #0643b2 10px 0px 0px, #0643b2 9.95004px 0.998334px 0px, #0643b2 9.80067px 1.98669px 0px, #0643b2 9.55336px 2.9552px 0px, #0643b2 9.21061px 3.89418px 0px, #0643b2 8.77583px 4.79426px 0px, #0643b2 8.25336px 5.64642px 0px, #0643b2 7.64842px 6.44218px 0px, #0643b2 6.96707px 7.17356px 0px, #0643b2 6.2161px 7.83327px 0px, #0643b2 5.40302px 8.41471px 0px, #0643b2 4.53596px 8.91207px 0px, #0643b2 3.62358px 9.32039px 0px, #0643b2 2.67499px 9.63558px 0px, #0643b2 1.69967px 9.8545px 0px, #0643b2 0.707372px 9.97495px 0px, #0643b2 -0.291995px 9.99574px 0px, #0643b2 -1.28844px 9.91665px 0px, #0643b2 -2.27202px 9.73848px 0px, #0643b2 -3.2329px 9.463px 0px, #0643b2 -4.16147px 9.09297px 0px, #0643b2 -5.04846px 8.63209px 0px, #0643b2 -5.88501px 8.08496px 0px, #0643b2 -6.66276px 7.45705px 0px, #0643b2 -7.37394px 6.75463px 0px, #0643b2 -8.01144px 5.98472px 0px, #0643b2 -8.56889px 5.15501px 0px, #0643b2 -9.04072px 4.2738px 0px, #0643b2 -9.42222px 3.34988px 0px, #0643b2 -9.70958px 2.39249px 0px, #0643b2 -9.89993px 1.4112px 0px, #0643b2 -9.99135px 0.415807px 0px, #0643b2 -9.98295px -0.583741px 0px, #0643b2 -9.8748px -1.57746px 0px, #0643b2 -9.66798px -2.55541px 0px, #0643b2 -9.36457px -3.50783px 0px, #0643b2 -8.96758px -4.4252px 0px, #0643b2 -8.481px -5.29836px 0px, #0643b2 -7.90968px -6.11858px 0px, #0643b2 -7.25932px -6.87766px 0px, #0643b2 -6.53644px -7.56803px 0px, #0643b2 -5.74824px -8.18277px 0px, #0643b2 -4.90261px -8.71576px 0px, #0643b2 -4.00799px -9.16166px 0px, #0643b2 -3.07333px -9.51602px 0px, #0643b2 -2.10796px -9.7753px 0px, #0643b2 -1.12153px -9.93691px 0px, #0643b2 -0.123887px -9.99923px 0px, #0643b2 0.87499px -9.96165px 0px, #0643b2 1.86512px -9.82453px 0px, #0643b2 2.83662px -9.58924px 0px, #0643b2 3.77978px -9.25815px 0px, #0643b2 4.68517px -8.83455px 0px, #0643b2 5.54374px -8.32267px 0px, #0643b2 6.34693px -7.72764px 0px, #0643b2 7.0867px -7.0554px 0px, #0643b2 7.75566px -6.31267px 0px, #0643b2 8.34713px -5.50686px 0px, #0643b2 8.8552px -4.64602px 0px, #0643b2 9.27478px -3.73877px 0px, #0643b2 9.6017px -2.79415px 0px, #0643b2 9.83268px -1.82163px 0px, #0643b2 9.96542px -0.830894px 0px;
+	    	text-shadow: $azul-oscuro 10px 0px 0px, $azul-oscuro 9.95004px 0.998334px 0px, $azul-oscuro 9.80067px 1.98669px 0px, $azul-oscuro 9.55336px 2.9552px 0px, $azul-oscuro 9.21061px 3.89418px 0px, $azul-oscuro 8.77583px 4.79426px 0px, $azul-oscuro 8.25336px 5.64642px 0px, $azul-oscuro 7.64842px 6.44218px 0px, $azul-oscuro 6.96707px 7.17356px 0px, $azul-oscuro 6.2161px 7.83327px 0px, $azul-oscuro 5.40302px 8.41471px 0px, $azul-oscuro 4.53596px 8.91207px 0px, $azul-oscuro 3.62358px 9.32039px 0px, $azul-oscuro 2.67499px 9.63558px 0px, $azul-oscuro 1.69967px 9.8545px 0px, $azul-oscuro 0.707372px 9.97495px 0px, $azul-oscuro -0.291995px 9.99574px 0px, $azul-oscuro -1.28844px 9.91665px 0px, $azul-oscuro -2.27202px 9.73848px 0px, $azul-oscuro -3.2329px 9.463px 0px, $azul-oscuro -4.16147px 9.09297px 0px, $azul-oscuro -5.04846px 8.63209px 0px, $azul-oscuro -5.88501px 8.08496px 0px, $azul-oscuro -6.66276px 7.45705px 0px, $azul-oscuro -7.37394px 6.75463px 0px, $azul-oscuro -8.01144px 5.98472px 0px, $azul-oscuro -8.56889px 5.15501px 0px, $azul-oscuro -9.04072px 4.2738px 0px, $azul-oscuro -9.42222px 3.34988px 0px, $azul-oscuro -9.70958px 2.39249px 0px, $azul-oscuro -9.89993px 1.4112px 0px, $azul-oscuro -9.99135px 0.415807px 0px, $azul-oscuro -9.98295px -0.583741px 0px, $azul-oscuro -9.8748px -1.57746px 0px, $azul-oscuro -9.66798px -2.55541px 0px, $azul-oscuro -9.36457px -3.50783px 0px, $azul-oscuro -8.96758px -4.4252px 0px, $azul-oscuro -8.481px -5.29836px 0px, $azul-oscuro -7.90968px -6.11858px 0px, $azul-oscuro -7.25932px -6.87766px 0px, $azul-oscuro -6.53644px -7.56803px 0px, $azul-oscuro -5.74824px -8.18277px 0px, $azul-oscuro -4.90261px -8.71576px 0px, $azul-oscuro -4.00799px -9.16166px 0px, $azul-oscuro -3.07333px -9.51602px 0px, $azul-oscuro -2.10796px -9.7753px 0px, $azul-oscuro -1.12153px -9.93691px 0px, $azul-oscuro -0.123887px -9.99923px 0px, $azul-oscuro 0.87499px -9.96165px 0px, $azul-oscuro 1.86512px -9.82453px 0px, $azul-oscuro 2.83662px -9.58924px 0px, $azul-oscuro 3.77978px -9.25815px 0px, $azul-oscuro 4.68517px -8.83455px 0px, $azul-oscuro 5.54374px -8.32267px 0px, $azul-oscuro 6.34693px -7.72764px 0px, $azul-oscuro 7.0867px -7.0554px 0px, $azul-oscuro 7.75566px -6.31267px 0px, $azul-oscuro 8.34713px -5.50686px 0px, $azul-oscuro 8.8552px -4.64602px 0px, $azul-oscuro 9.27478px -3.73877px 0px, $azul-oscuro 9.6017px -2.79415px 0px, $azul-oscuro 9.83268px -1.82163px 0px, $azul-oscuro 9.96542px -0.830894px 0px;
 	    }
 		.sliders{
 			.owl-item{
@@ -1169,6 +1169,9 @@ body{
 			    			font-size: 1.3rem;
 			    			line-height: 1.3rem;
 			    			margin-bottom: .5rem;
+							@include media-breakpoint-between(xs,sm) {
+								width: 100%;
+							}
 			    		}
 			    		&:checked{
 				    		& ~ .checkmark{
@@ -1240,7 +1243,7 @@ body{
 		//formulario
 		.msj-form{
 			.form{
-				background: #0643B2 url(../img/bg-grid-contact-pattern.svg) repeat left top;
+				background: $azul-oscuro url(../img/bg-grid-contact-pattern.svg) repeat left top;
 			    padding-top: 80px;
 			    padding-bottom: 60px;
 			    color: $white;
@@ -1261,6 +1264,11 @@ body{
 	    		}
 			}
 		}
+	}
+}
+@include media-breakpoint-between(xs,sm) {
+	#quest{
+		margin-top: 3rem;
 	}
 }
 .vet-route{
@@ -1373,7 +1381,7 @@ body{
 	}
 }
 #contactanos{
-	background: #0643B2 url(../img/bg-grid-contact-pattern.svg) repeat left top;
+	background: $azul-oscuro url(../img/bg-grid-contact-pattern.svg) repeat left top;
     padding-top: 80px;
     padding-bottom: 60px;
     color: $white;
@@ -1427,7 +1435,7 @@ body{
 	}
 }
 #master-vet-contacto{
-    background: #0643B2 url(../img/bg-grid-contact-pattern.svg) repeat left top;
+    background: $azul-oscuro url(../img/bg-grid-contact-pattern.svg) repeat left top;
     padding-top: 4rem;
 	padding-bottom: 4rem;
 	.title{
@@ -1528,7 +1536,9 @@ body{
 	}
 }
 #master-club{
-	min-height: 90vh;
+	@include media-breakpoint-up(md) {
+		min-height: 90vh;
+	}
 	.wpcf7,form{
 		height: 100%;
 	}
@@ -1593,6 +1603,9 @@ body{
 	    		color: $azul3;
 	    		font-family: $secondary-font;
 			    font-size: 3rem;
+				@include media-breakpoint-between(xs,sm) {
+					font-size: 1.5rem;
+				}
 			    &:focus{
 			    	outline: none;
 			    }
@@ -1630,6 +1643,9 @@ body{
 	.paso-4{
 		height: 100%;
 		width: 100%;
+		@include media-breakpoint-between(xs,sm) {
+			padding-top: 7rem;
+		}
 		.row{
 			height: 100%;
 		}
