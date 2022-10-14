@@ -80,7 +80,7 @@
 	<div class="owl-carousel owl-theme owl-mmatch">
 		<div class="img-carousel">
 			<div class="content">
-		        <h4><img src="<?php echo get_field('master_match_group')['logo']['url'];?>"></h4>
+		        <h3><img src="<?php echo get_field('master_match_group')['logo']['url'];?>"></h3>
 		        <span><?php echo get_field('master_match_group')['contenido'];?></span>
 		        <a href="<?php echo get_field('master_match_group')['boton']['url'];?>" class="btn btn-primary" title="<?php echo get_field('master_match_group')['boton']['title'];?>"><?php echo get_field('master_match_group')['boton']['title'];?></a>
 		    </div>
@@ -92,7 +92,7 @@
 <?php get_footer(); ?> 
 <script type="text/javascript">
 $('.owl-vet').owlCarousel({
-    loop:true,
+    loop:false,
     margin:0,
     dots:false,
     nav:true,
@@ -101,7 +101,7 @@ $('.owl-vet').owlCarousel({
     }
 })
 $('.owl-mmatch').owlCarousel({
-    loop:true,
+    loop:false,
     margin:0,
     dots:false,
     nav:true,

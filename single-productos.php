@@ -8,13 +8,13 @@
 				<h1 class="title"><?php the_title(); ?></h1>
 				<div class="content"><?php echo get_field('cabecera_group',$ID)['contenido']; ?></div>
 			
-				<h5 class="title">Presentación</h5>
+				<h5 class="title mt-3">Presentación</h5>
 				<div class="sale-points__presentations mb-4">
 				<?php if(get_field('cabecera_group',$ID)['presentacion']): foreach(get_field('cabecera_group',$ID)['presentacion'] as $presentacion): ?>
                     <span class="sale-points-pill mb-4"><?php echo trim($presentacion['presentacion']); ?>&#8239;<?php echo trim($presentacion['volumen']); ?></span>
                 <?php endforeach; endif; ?>
                 </div>
-                <div class="d-none d-sm-block mb-5">
+                <div class="d-block mb-5">
                     <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#response-dialog-sale">Ver puntos de venta</button>
                 </div>
 			</div>

@@ -68,6 +68,10 @@ a {
 	.hidden-field {
 	    display: none !important;
 	}
+	.wpcf7-response-output{
+		background-color: rgba($azul-bg,.6);
+		border-color: $azul-bg!important;
+	}
 }
 .btn {
     border: none;
@@ -375,7 +379,8 @@ header.menu-header{
 	    }
 	    h4{
     		font-size: 2rem;
-    		line-height: 2rem;    		
+    		line-height: 2rem;
+			color: $azul-claro;
 	    }
 	    a.btn-link{
 	    	color: $azul3;
@@ -613,7 +618,7 @@ header.menu-header{
 		    		color: $azul3;
 		    		font-size: 1rem;
 		    		span{
-		    			color: $rojo;
+		    			color: $azul-claro;
 		    			font-size: 1.3rem;
 		    		}
 		    	}
@@ -890,7 +895,7 @@ header.menu-header{
 		padding-bottom: 3rem;
 		background-size: 100%;
 		.title{
-			color: $azul2;
+			color: $azul3;
 			margin-top: 2vh;
 			margin-bottom: 1rem;
 			small{
@@ -902,9 +907,9 @@ header.menu-header{
 		}
 		.n-title{
 			font-family: $secondary-font;
-			color: $azul4;
+			color: $azul3;
 			span{
-				color:$magenta;
+				color:$azul4;
 			}
 		}
 		.owl-relacionados{
@@ -997,7 +1002,7 @@ header.secondary-nav{
 		a{
 			color: $black;
 			.mini-title{
-				color: $azul2;
+				color: $azul3;
 			}
 			small{
 				color: $amarillo;
@@ -1117,7 +1122,14 @@ body{
 			    left: 0;
 			    top: 0;
 			    margin-top: -3rem;
-			    text-align: center;	
+			    text-align: center;
+				.img-fluid{
+					margin: 0 auto;
+					width: 25%;
+					@include media-breakpoint-between(xs,sm) {
+						width: 80%;
+					}					
+				}
 			}
 		}
 		#master-match{
@@ -1311,6 +1323,11 @@ body{
 		}
 	}
 }
+.stroke{
+	/*-webkit-text-fill-color: transparent;*/
+	-webkit-text-stroke-width: .1rem;
+	-webkit-text-stroke-color: $azul-bg;
+}
 .fancybox-slide-{
 	&-html .fancybox-content {
 	    /*width  : 800px;
@@ -1330,18 +1347,22 @@ body{
 		}
 		background-image: url("../img/popup-sac-bg.png");
 		background-repeat: no-repeat;
-		background-size: cover;
-		.stroke{
-			-webkit-text-fill-color: transparent;
-			-webkit-text-stroke-width: .1rem;
-			-webkit-text-stroke-color: $azul2;
-		}
+		background-size: cover;		
 	}
 	&-image .fancybox-content img {
 		/*
 		min-width  : 800px;
 	    min-height : 600px;
 	    */
+	}
+}
+body.page-id-282{
+	.fancybox-slide-{
+		&-html .fancybox-content {
+			padding: 0;
+			background: none;
+			background-image: none;
+		}
 	}
 }
 .single{
